@@ -7,8 +7,7 @@ VCR.use_cassette("fuel_stations") do
       stations = service.fuel_stations_hash("80130")
 
       expect(stations.count).to eq 8
-      expect(stations.first.name).to eq "some name"
-      expect(stations.last.address).to eq "this address"
+      expect(stations.first).to eq [:latitude, 39.5397979]
     end
   end
 end
