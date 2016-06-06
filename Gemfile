@@ -13,6 +13,7 @@ gem "therubyracer"
 gem "less-rails"
 gem "figaro"
 gem "faraday"
+gem 'shoulda-matchers', '~> 3.1'
 
 group :development, :test do
   gem "pry-rails"
